@@ -1,7 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+/*  couleurs de la charte
+bleu #0065FC
+bleu plus claire #DEEBFF 
+gris pour le fond #F2F2F2 */
+
+#bloc_page {
+    margin: 0px 30px;
+}
+
 body {
     margin: 0;
   }
-  
+
 ol, ul {
 	list-style: none;
+}
+
+/* header*/
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    grid-template-rows:100px;
+    gap: 0px 0px;
+    grid-template-areas:
+      "logo_reservia nav_inscription";
+  }
+
+header {
+    height: 100px;
+    
+}
+
+.logo_reservia {
+    grid-area: logo_reservia;
+    padding: 40px 5px;
+}
+
+.logo_reservia img {
+    width: 120px;
+}
+
+/* nav */
+
+.nav_inscription {
+    grid-area: nav_inscription;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 40px 10px;
+    margin-right: 10px;
+}
+
+.inscription  {
+
+    padding-left: 2px;
+}
+
+.inscription a {
+    text-decoration: none;
+    color: #0065FC;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav  a:hover {
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+    padding-top: 55px;
+}
+
+nav li {
+
+    padding: 0px 20px 0px 20px; 
+    margin-right: 50px;
+} 
+
+.menu_nav {
+    display: flex;
+    justify-content: stretch;
 }
