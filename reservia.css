@@ -24,18 +24,15 @@ ol, ul {
 /* header*/
 
 header {
+    height: 100px;
+    width: 1200;
     display: grid;
-    grid-template-columns: 1fr 40%;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows:100px;
     gap: 0px 0px;
     grid-template-areas:
       "logo_reservia nav_inscription";
   }
-
-header {
-    height: 100px;
-    
-}
 
 .logo_reservia {
     grid-area: logo_reservia;
@@ -51,9 +48,11 @@ header {
 .nav_inscription {
     grid-area: nav_inscription;
     display: flex;
+    justify-content: flex-end;
     flex-wrap: nowrap;
-    padding: 40px 10px;
-    margin-right: 10px;
+     padding: 40px 0px;
+    margin-right: 0px;
+    margin-left: 50px; 
 }
 
 .inscription  {
