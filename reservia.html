@@ -5,39 +5,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reservia.css">
+    <script src="https://kit.fontawesome.com/1e5361eb1b.js" crossorigin="anonymous"></script>
     <title>Reservia</title>
 </head>
 <body>
-    <i class="fas fa-map-marker-alt"></i> <!-- icone map noir --> 
-    <i class="fas fa-money-bill-wave"></i> <!-- icone filtre economique bleu #0065FC -->
-    <i class="fas fa-child"></i> <!-- icone filtre familiale bleu #0065FC -->
-    <i class="fas fa-heart"></i> <!-- icone  filtre romantique bleu #0065FC -->
-    <i class="fas fa-dog"></i> <!-- icone  filtre animaux autorisé bleu #0065FC-->
-    <i class="fas fa-chart-line"></i> <!-- icone  les plus populaires noir-->
-    <i class="fas fa-info-circle"></i> <!-- icone info "i" / #0065FC -->
-    <i class="fas fa-star"></i><!-- icone etoile / bleu #0065FC / gris #F2F2F2 -->
+
+    <!-- <i class="fas fa-star"></i>icone etoile / bleu #0065FC / gris #F2F2F2 --> 
 
 <div id="bloc_page">
+
+
+    <!-- header -->
+    <div class="en_tete">
 
     <header>
     
         <div class="logo_reservia">
             <img src="images/logo/Reservia@3x.png" alt="logo reservia">
         </div>  
-        
-        <div class="nav_inscription">
-            <nav>
-                <ul class="menu_nav">
-                    <li><a href="#">Hébergements</a></li>
-                    <li><a href="#">Activités</a></li>
-                </ul>
-            </nav>  
 
-            <div class="inscription">
-                <a href="#"><p>S'inscrire</p></a>
+        <nav>
+            <ul class="menu_nav">
+                <li><a href="#">Hébergements</a></li>
+                <li><a href="#">Activités</a></li>
+            </ul>
+        </nav>  
+
+        <div class="inscription">
+            <a href="#"><p>S'inscrire</p></a>
+        </div>
+
+    </header>
+
+    <!-- Section recherche -->
+
+    <section class="recherche">
+        
+        <h1 class="titre">Trouvez votre hébergement pour des vacances de rêve</h1>
+        <h2 class="titre">En plein centre ville ou en pleine nature</h2>
+        
+<div class="formulaire">
+        <form class="form_rch"
+            method="POST" action="traitement.php">
+              
+                <label for="Ville">
+                    <em><i class="fas fa-map-marker-alt"></i></em>
+                </label>
+
+                <input class="input_rch" type="text" id="Ville" value="Marseille, France" autofocus >
+                <input class="input_btn" type="submit" value="Rechercher">
+              
+        </form>
+</div>
+    </section>
+
+    <!-- section filtre -->
+
+    <div class="filtre-container">
+  
+        <div class="filtres">
+          <p>Filtres</p>
+        </div>
+
+        <div class="btn_filtre">    
+            <div class="eco">
+                <a href=""><p><span><i class="fas fa-money-bill-wave"></i></span> Economique</p></a>
+            </div>
+        
+            <div class="fam">
+                <a href=""><p><span><i class="fas fa-child"></i></span> Famillial</p></a>
+            </div>
+        
+            <div class="rom">
+                <a href=""><p><span><i class="fas fa-heart"></i></span> Romantique</p>  </a>
+            </div>
+        
+            <div class="anim">
+                <a href=""><p><span><i class="fas fa-dog"></i></span> Animaux autorisés</p> </a>
             </div>
         </div>
-    </header>
+        
+        <div class="info">
+         <p><span><i class="fas fa-info-circle"></i></span> Plus de 500 logements sont disponible dans cette ville</p> 
+        </div>
+        
+    </div>
+</div>
+
+<!-- main -->
+
+    <div class="main_hebergement"></div>
+
+<!-- section hebergement  -->
+
+
+
+<!-- section activitées -->
+
+        <div class="main_activite"></div>
+    </div>
+<!-- footer -->
+
 
 </div>
 </body>
