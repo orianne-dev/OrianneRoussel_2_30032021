@@ -16,7 +16,7 @@
 
 
     <!-- header -->
-    <div class="en_tete">
+    <div id="en_tete">
 
     <header>
     
@@ -40,23 +40,27 @@
     <!-- Section recherche -->
 
     <section class="recherche">
+        <div class="container_rch">
+            <div class="t1">
+                <h1 class="titre">Trouvez votre hébergement <br />pour des vacances de rêve</h1>
+            </div>
+            <div class="t2">
+                <h2 class="titre">En plein centre ville ou en pleine nature</h2>
+            </div>
         
-        <h1 class="titre">Trouvez votre hébergement pour des vacances de rêve</h1>
-        <h2 class="titre">En plein centre ville ou en pleine nature</h2>
-        
-<div class="formulaire">
-        <form class="form_rch"
-            method="POST" action="traitement.php">
-              
-                <label for="Ville">
-                    <em><i class="fas fa-map-marker-alt"></i></em>
-                </label>
+            <div class="formulaire">
 
-                <input class="input_rch" type="text" id="Ville" value="Marseille, France" autofocus >
-                <input class="input_btn" type="submit" value="Rechercher">
+                <form class="form_rch" method="POST" action="traitement.php">
               
-        </form>
-</div>
+                    <label for="Ville">
+                        <em><i class="fas fa-map-marker-alt"></i></em>
+                    </label>
+
+                    <input class="input_rch" type="text" id="Ville" value=" Marseille, France" autofocus >
+                    <input class="input_btn" type="submit" value="Rechercher">
+                </form>
+            </div>
+        </div>
     </section>
 
     <!-- section filtre -->
@@ -103,8 +107,10 @@
 <!-- section activitées -->
 
         <div class="main_activite"></div>
-    </div>
+    
 <!-- footer -->
+
+        <div class="footer"></div>
 
 
 </div>

@@ -15,28 +15,16 @@ ol, ul {
 	list-style: none;
 }
 
-/* grid mise en page */
+/* mise en page */
 
-#bloc_page {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 200px;
-    gap: 0px 0px;
-    grid-template-areas:
-      "en_tete"
-      "main_hebergement"
-      "main_activite"
-      "footer";
-  }
-  
-  .en_tete { grid-area: en_tete; }
-  
-  .main_hebergement { grid-area: main_hebergement; }
-  
-  .main_activite { grid-area: main_activite; }
+#en_tete {
+    margin: 0px 80px 0px 30px;
 
-  .footer { grid-area: footer; }
+}
 
+
+  
+  
 /* header*/
 
 header {
@@ -98,6 +86,26 @@ nav li {
 
 /* section Recherche */
 
+.container_rch {
+    width: 100%;
+    height: 150px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50px 50px auto;
+    gap: 0px 0px;
+    grid-template-areas:
+      "h1"
+      "h2"
+      "formulaire";
+  }
+  
+  .t1 { grid-area: h1; }
+  
+  .t2 { grid-area: h2; }
+  
+  .formulaire { grid-area: formulaire; }
+  
+
 .recherche {
     margin: 50px 0px 30px 0px;
 }
@@ -108,6 +116,16 @@ nav li {
 
 .recherche h2 {
     font-size: 0.8rem;
+    margin: -8px 0px 24px 0px;
+}
+
+form label {
+        display: inline-block;
+        width: 45px;
+}
+
+form i {
+    padding: 0px 0px 0px 7px;
 }
 
 /*bouton*/
@@ -117,8 +135,8 @@ label em {
     border-radius: 20px 0px 0px 20px;
     background-color: #F2F2F2;
     margin: 0px ;
-    font-size: 1.2rem;
-    padding: 9px;
+    font-size: 1rem;
+    padding: 14px 13px 14px 13px;
 }
 
 .input_rch {
@@ -136,7 +154,7 @@ label em {
     border: 1px solid #0065FC;
     border-radius: 0px 20px 20px 0px;
     transition: all 0.5s ease;
-    height: 50px;
+    height: 54px;
     width: 150px;
     font-size: 1rem;
     position: absolute;
@@ -175,19 +193,21 @@ label em {
 
 .filtre-container p {
     border: 3px solid #F2F2F2;
-    border-radius: 20px; 
+    border-radius: 50px; 
     display: inline;
     padding: 12px 10px 12px 0px;
     white-space: nowrap;
+    margin: 17px;
 }
 
 .filtre-container span {
     color: #0065FC;
     border: 5px solid #DEEBFF;
     background-color: #DEEBFF;
-    padding: 10px;
-    border-radius: 50% 50% 50% 50%;
+    padding: 9px;
+    border-radius: 44% 44% 44% 44%;
     font-size: 1rem;
+    margin-right: 7px;
 }
   
 .filtres { 
@@ -246,7 +266,7 @@ label em {
     transition-timing-function: ease-out;
 }
 
-.filtre-container i:hover {
+.filtre-container a:hover i {
     -webkit-transform: scale(1.3) translateZ(0);
     transform: scale(1.3) translateZ(0);
 }
@@ -258,6 +278,10 @@ label em {
 
     #bloc_page {
         margin: 0px;
+    }
+
+    #en_tete {
+        margin: -8px 0px 0px 0px;
     }
 
     header {
@@ -305,35 +329,43 @@ label em {
     }
 
     /*recherche*/
+     .container_rch {
+        width: 100%;
+        
+    } 
 
     section.recherche {
-        height: 200px;
-        width: 770px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
         margin: 0;
     }
 
     .formulaire { 
-        margin-top: 15px;
+        margin: 20px 133px 0px 0px;
         display: flex;
         justify-content: center;
         align-content: center;
         
     }
 
-    .titre {
+    h1 {
         display: flex;
         justify-content: center;
         align-content: center;
+        margin: 30px 12px 0px 0px;
+        padding: 10px;
+    }
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: 27px;
     }
 
     /*bouton recherche*/
 
     label em {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+        padding: 9px 13px 13px 13px;
     }
     
     .input_rch {
@@ -366,8 +398,9 @@ label em {
     .filtres { 
           grid-area: filtres; 
           display: flex;
-          
     } 
+
+    
 
     .btn_filtre {
         margin-top: 15px;
@@ -435,6 +468,10 @@ label em {
 
     /*filtre*/
 
+    .filtre-container {
+        width: 70%;
+    }
+
     .filtres {
         font-size: 0.7rem;
     }
@@ -454,9 +491,87 @@ label em {
     }
 }
   
+/* Media queries telephone */
 
+@media (max-width: 414px) {
+
+    /* header */
+
+    #en_tete {
+        margin: 0;
+    }
+
+    .menu_nav {
+        font-size: 0.8rem;
+        margin: -10px -22px -21px 20px;
+    }
+
+    /* recherche */
+
+    .recherche br {
+        display: none;
+    }
+
+    .recherche h1 {
+    font-size: 0.7rem;
+    margin: 0;
+    }
+
+    .recherche h2 {
+    font-size: 0.6rem;
+    margin: 0;
+    padding: 0;
+    }
+
+    .formulaire {
+    margin: -22px 101px 0px 0px;
+    }
+
+    /*fitres*/
+
+    .btn_filtre p {
+        font-size: 0.6rem;
+        margin: 10px 29px 10px 0px;
+    }
+
+    .filtre-container {
+        margin: -20px 0px 0px 20px;
+        grid-template-columns: 324px;
+        grid-template-rows: 40px 1fr 40px;
+        
+    }
+
+    .filtre-container p {
+        padding: 11px 10px 10px 1px;
+    }
+
+    .filtre-container span {
+        font-size: 0.9rem;
+        border: 3px solid #DEEBFF;
+        padding: 7px;
+        border-radius: 50% 50% 50% 50%;
+        margin-right: 5px;
+    }
+
+    .info {
+        font-size: 0.5rem;
+        margin-left: -16px;
+    }
+
+    .info span {
+        font-size: 0.7rem;
+        padding: 2px;
+        border: 1px solid #DEEBFF;
+    }
+
+    .logo_reservia img {
+        margin-top: 8px;
+    }
+
+} 
 
   
 
 
 
+/*mettre un container au header et footer max widht 1200px par dessus le fond/*
