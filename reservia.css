@@ -335,6 +335,7 @@ label em {
     } 
 
     section.recherche {
+
         margin: 0;
     }
 
@@ -493,6 +494,12 @@ label em {
   
 /* Media queries telephone */
 
+@media (min-width: 414px) { 
+.recherche br {
+    display: none;
+}
+}
+
 @media (max-width: 414px) {
 
     /* header */
@@ -507,10 +514,6 @@ label em {
     }
 
     /* recherche */
-
-    .recherche br {
-        display: none;
-    }
 
     .recherche h1 {
     font-size: 0.7rem;
@@ -574,4 +577,3 @@ label em {
 
 
 
-/*mettre un container au header et footer max widht 1200px par dessus le fond/*
