@@ -273,13 +273,30 @@ label em {
 
 /* main */
 .main_container {
+    /* max-width: 1500px;
+    width: 90%; */
+    height: auto;
+    margin: auto;
+    background-color: #77a5eb;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    gap: 30px 30px;
+    grid-template-areas:
+      "hebergement_pop"
+      "section_activite";
+  }
+
+
+.hebergement_pop {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 /* Hebergement */
 
-.main_container section {
+.section_hebergement {
+    grid-area: section_hebergement;
     background-color: rgb(70, 68, 68);
     max-width: 1200px;
     width: 80%;
@@ -344,7 +361,8 @@ label em {
       background-color: #fc007e;
     }
 
-    .main_container aside {
+    .section_populaire {
+        grid-area: section_populaire;
         background-color: rgb(197, 150, 150);
         max-width: 500px;
     width: 80%;
@@ -388,12 +406,74 @@ label em {
       background-color: #a1f097;
     }
       
-  
-
-
   /* Activité */
-  
-  /* .activite { grid-area: activite; } */
+
+  .section_activite {
+      grid-area: section_activite;
+    background-color: rgb(70, 68, 68);
+    /* max-width: 1200px;
+    width: 80%; */
+    height: 750px;
+    /* margin-right: 60px; */
+}
+
+  .container_activite {
+    /* max-width: 1080px; */
+    width: 90%;
+    height: auto;
+    margin: auto;
+    background-color: #DEEBFF;
+    display: grid;
+    grid-template-columns: repeat(4, 381px);
+    grid-template-rows: 240px 240px;
+    gap: 30px 30px;
+    grid-template-areas:
+      "vieux_port fort_de_pomegue parc_national notre_dame_delagarde"
+      "vieux_port ile_du_fioul parc_national parc_longchamp";
+  }
+
+  .vieux_port { 
+    grid-area: vieux_port; 
+    width: 100%;
+  height: 100%;
+  background-color: #46a739;
+}
+
+.fort_de_pomegue { 
+    grid-area: fort_de_pomegue; 
+    width: 100%;
+  height: 100%;
+  background-color: #1990b4;
+}
+
+.ile_du_fioul { 
+    grid-area: ile_du_fioul; 
+    width: 100%;
+  height: 100%;
+  background-color: #e93c3c;
+}
+
+.parc_national { 
+    grid-area: parc_national; 
+    width: 100%;
+  height: 100%;
+  background-color: #dee059;
+}
+
+.notre_dame_delagarde { 
+    grid-area: notre_dame_delagarde; 
+    width: 100%;
+  height: 100%;
+  background-color: #bb1ebb;
+}
+
+.parc_longchamp { 
+    grid-area: parc_longchamp; 
+    width: 100%;
+  height: 100%;
+  background-color: #6918d4;
+}
+
   
 
 /* Media queries */
