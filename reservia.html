@@ -10,143 +10,151 @@
 </head>
 <body>
 
-    <!-- <i class="fas fa-star"></i>icone etoile / bleu #0065FC / gris #F2F2F2 --> 
+    <!-- <i class="fas fa-star"></i>icone etoile --> 
 
 <div id="bloc_page">
 
+<!-- header -->
 
-    <!-- header -->
     <div id="en_tete">
-
-    <header>
-    
-        <div class="logo_reservia">
-            <img src="images/logo/Reservia@3x.png" alt="logo reservia">
-        </div>  
-
-        <nav>
-            <ul class="menu_nav">
-                <li><a href="#">Hébergements</a></li>
-                <li><a href="#">Activités</a></li>
-            </ul>
-        </nav>  
-
-        <div class="inscription">
-            <a href="#"><p>S'inscrire</p></a>
-        </div>
-
-    </header>
+        <header>
+            <div class="logo_reservia">
+                <img src="images/logo/Reservia@3x.png" alt="logo reservia">
+            </div>  
+            <nav>
+                <ul class="menu_nav">
+                    <li><a href="#">Hébergements</a></li>
+                    <li><a href="#">Activités</a></li>
+                </ul>
+            </nav>  
+            <div class="inscription">
+                <a href="#"><p>S'inscrire</p></a>
+            </div>
+        </header>
 
     <!-- Section recherche -->
 
-    <section class="recherche">
-        <div class="container_rch">
-            <div class="t1">
-                <h1 class="titre">Trouvez votre hébergement <br />pour des vacances de rêve</h1>
-            </div>
-            <div class="t2">
-                <h2 class="titre">En plein centre ville ou en pleine nature</h2>
-            </div>
+        <section class="recherche">
+            <div class="container_rch">
+                <div class="t1">
+                    <h1 class="titre">Trouvez votre hébergement <br />pour des vacances de rêve</h1>
+                </div>
+                <div class="t2">
+                    <h2 class="titre">En plein centre ville ou en pleine nature</h2>
+                </div>
         
-            <div class="formulaire">
+                <div class="formulaire">
+                    <form class="form_rch" method="POST" action="traitement.php">
+                        <label for="Ville">
+                            <em><i class="fas fa-map-marker-alt"></i></em>
+                        </label>
+                        <input class="input_rch" type="text" id="Ville" value=" Marseille, France" autofocus >
+                        <input class="input_btn" type="submit" value="Rechercher">
+                    </form>
+                </div>
+            </div>
+        </section>
 
-                <form class="form_rch" method="POST" action="traitement.php">
-              
-                    <label for="Ville">
-                        <em><i class="fas fa-map-marker-alt"></i></em>
-                    </label>
+<!-- section filtre -->
 
-                    <input class="input_rch" type="text" id="Ville" value=" Marseille, France" autofocus >
-                    <input class="input_btn" type="submit" value="Rechercher">
-                </form>
+        <div class="filtre-container">
+            <div class="filtres">
+                <p>Filtres</p>
+            </div>
+            <div class="btn_filtre">    
+                <div class="eco">
+                    <a href=""><p><span><i class="fas fa-money-bill-wave"></i></span> Economique</p></a>
+                </div>
+                <div class="fam">
+                    <a href=""><p><span><i class="fas fa-child"></i></span> Famillial</p></a>
+                </div>
+                <div class="rom">
+                    <a href=""><p><span><i class="fas fa-heart"></i></span> Romantique</p>  </a>
+                </div>
+                <div class="anim">
+                    <a href=""><p><span><i class="fas fa-dog"></i></span> Animaux autorisés</p> </a>
+                </div>
+            </div>
+            <div class="info">
+                <p><span><i class="fas fa-info-circle"></i></span> Plus de 500 logements sont disponible dans cette ville</p> 
             </div>
         </div>
-    </section>
-
-    <!-- section filtre -->
-
-    <div class="filtre-container">
-  
-        <div class="filtres">
-          <p>Filtres</p>
-        </div>
-
-        <div class="btn_filtre">    
-            <div class="eco">
-                <a href=""><p><span><i class="fas fa-money-bill-wave"></i></span> Economique</p></a>
-            </div>
-        
-            <div class="fam">
-                <a href=""><p><span><i class="fas fa-child"></i></span> Famillial</p></a>
-            </div>
-        
-            <div class="rom">
-                <a href=""><p><span><i class="fas fa-heart"></i></span> Romantique</p>  </a>
-            </div>
-        
-            <div class="anim">
-                <a href=""><p><span><i class="fas fa-dog"></i></span> Animaux autorisés</p> </a>
-            </div>
-        </div>
-        
-        <div class="info">
-         <p><span><i class="fas fa-info-circle"></i></span> Plus de 500 logements sont disponible dans cette ville</p> 
-        </div>
-        
-    </div>
-
+    </div> 
 
 <!-- main -->
 
-<div class="main_container">
+    <div class="main_container">
 
 <!-- section hebergement  -->
-<div class="hebergement_pop">
-<section class="section_hebergement">
-    <h1>Hébergement à Marseille</h1>
-        <div class="container_hebergement">
-            <div class="auberge_la_cannebiere"></div>
-            <div class="hotel_du_port"></div>
-            <div class="hotel_les_mouettes"></div>
-            <div class="hotel_de_la_mer"></div>
-            <div class="auberge_le_panier"></div>
-            <div class="hotel_chez_amina"></div>
-        </div>
-    <p>Afficher plus</p>
-</section>
-    
-<section class="section_populaire">
-    <h1>Les plus populaires</h1>
-        <div class="container_populaire">
-            <div class="hotel_le_soleil"></div>
-            <div class="au_coeur"></div>
-            <div class="hotel_tout_bleu"></div>
-        </div>
-    </section>
-</div>
 
+        <div class="hebergement_pop">
+            <section class="section_hebergement">
+                <h1>Hébergement à Marseille</h1>
+                    <div class="container_hebergement">
+                        <div class="auberge_la_cannebiere"></div>
+                        <div class="hotel_du_port"></div>
+                        <div class="hotel_les_mouettes"></div>
+                        <div class="hotel_de_la_mer"></div>
+                        <div class="auberge_le_panier"></div>
+                        <div class="hotel_chez_amina"></div>
+                    </div>
+                <p>Afficher plus</p>
+            </section>
+            <section class="section_populaire">
+                <h1>Les plus populaires</h1>
+                    <div class="container_populaire">
+                        <div class="hotel_le_soleil"></div>
+                        <div class="au_coeur"></div>
+                        <div class="hotel_tout_bleu"></div>
+                    </div>
+            </section>
+        </div>
 
 <!-- section activitées -->
-<div class="section_activite">
-    <h1>Activités à Marseille</h1>
-    <div class="container_activite">
-        <div class="vieux_port"></div>
-        <div class="fort_de_pomegue"></div>
-        <div class="ile_du_fioul"></div>
-        <div class="parc_national"></div>
-        <div class="notre_dame_delagarde"></div>
-        <div class="parc_longchamp"></div>
-    </div>
-</div>
-</div>
-    
+
+        <div class="section_activite">
+            <h1>Activités à Marseille</h1>
+                <div class="container_activite">
+                    <div class="vieux_port"></div>
+                    <div class="fort_de_pomegue"></div>
+                    <div class="ile_du_fioul"></div>
+                    <div class="parc_national"></div>
+                    <div class="notre_dame_delagarde"></div>
+                    <div class="parc_longchamp"></div>
+                </div>
+        </div>
+    </div> 
+
 <!-- footer -->
 
-<div class="footer">
+<footer>
+    <div class="container_footer">
+        <div class="item_footer">
+            <ul>
+                <h1>A propos</h1>
+                <li>Fonctionnement du site</li>
+                <li>Conditions générales de vente</li>
+                <li>Données et confidentialité</li>
+            </ul>
+        </div>
+        <div class="item_footer">
+            <ul>
+                <h1>Nos hébergement</h1>
+                <li>Charte qualité</li>
+                <li>Soumettre votre hôtel</li>
+            </ul>
+        </div>
+        <div class="item_footer">
+            <ul>
+                <h1>Assistance</h1>
+                <li>Centre d'aide</li>
+                <li>Nous contacter</li>
+            </ul>
+        </div>
+    </div>
+</footer>
 
 </div>
 
-</div>
-</div>
 </body>
 </html>
