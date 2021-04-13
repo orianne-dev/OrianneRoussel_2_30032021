@@ -295,6 +295,22 @@ label em {
     font-size: 1rem;
   }
 
+  .section_hebergement  h2 li {
+    font-size: 0.9rem;
+  }
+
+  .section_hebergement  h2 {
+      margin: 0;
+  }
+
+  .section_hebergement  figure {
+    background-color: white;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .container_hebergement {
     width: 50vw;
     height: auto;
@@ -309,9 +325,16 @@ label em {
   
   .auberge_la_cannebiere { 
         grid-area: auberge_la_cannebiere; 
-        width: 100%;
-        height: 100%;
-        background-color: #0065FC;
+        /* width: 100%;
+        height: 100%; */
+    }
+
+    .box_photo_auberge_la_cannebiere {
+        background-image: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+        background-size: cover;
+        width: 95%;
+        height: 65%;
+
     }
   
   .hotel_du_port { 
