@@ -263,8 +263,7 @@ label em {
 /* main */
 
 .main_container {
-    max-width: 100%;
-    background-color: #77a5eb;
+    margin: 0px 80px 0px 30px;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
@@ -276,6 +275,7 @@ label em {
 
 
 .hebergement_pop {
+    width: auto;
     display: flex;
     flex-wrap: nowrap;
 }
@@ -284,23 +284,24 @@ label em {
 
 .section_hebergement {
     grid-area: section_hebergement;
-    background-color: #F2F2F2;
-    max-width: 1200px;
-    width: 80%;
-    height: 750px;
-    margin-right: 60px;
+    background-color: #DEEBFF;
+    width: 63vw;
+    height: auto;
+    padding: 0px 0px 0px 40px;
+    margin: 0px 50px 0px 45px;
 }
 
+.section_hebergement  h1 {
+    font-size: 1rem;
+  }
+
   .container_hebergement {
-    max-width: 1080px;
-    width: 90%;
+    width: 50vw;
     height: auto;
-    margin: auto;
-    background-color: #F2F2F2;
     display: grid;
-    grid-template-columns: repeat(3, 339px);
-    grid-template-rows: 230px 230px;
-    gap: 30px 30px;
+    grid-template-columns: repeat(3, 18vw);
+    grid-template-rows: 14vw 14vw;
+    gap: 40px 40px;
     grid-template-areas:
       "auberge_la_cannebiere hotel_du_port hotel_les_mouettes"
       "hotel_de_la_mer auberge_le_panier hotel_chez_amina";
@@ -317,55 +318,55 @@ label em {
     grid-area: hotel_du_port; 
     width: 100%;
     height: 100%;
-    background-color: #f400fc;
+    background-color: #0065FC;
     }
   
   .hotel_les_mouettes { 
       grid-area: hotel_les_mouettes; 
       width: 100%;
       height: 100%;
-      background-color: #00fc69;
+      background-color: #0065FC;
     }
   
   .hotel_de_la_mer { 
       grid-area: hotel_de_la_mer; 
       width: 100%;
       height: 100%;
-      background-color: #b9fc00;
+      background-color: #0065FC;
     }
   
   .auberge_le_panier { 
       grid-area: auberge_le_panier;
       width: 100%;
       height: 100%;
-      background-color: #0004fc;
+      background-color: #0065FC;
     }
   
   .hotel_chez_amina { 
       grid-area: hotel_chez_amina; 
       width: 100%;
       height: 100%;
-      background-color: #fc007e;
+      background-color: #0065FC;
     }
 
     .section_populaire {
-        grid-area: section_populaire;
-        background-color: rgb(197, 150, 150);
-        max-width: 500px;
-    width: 80%;
+    grid-area: section_populaire;
+    background-color: #DEEBFF;
     height: auto;
     }
 
+    .section_populaire h1 {
+        font-size: 1rem;
+    }
+
     .container_populaire {
-        background-color: #F2F2F2;
-        max-width: 480px;
-        width: 90%;
+        width: 20vw;
         height: auto;
-        margin: auto;
+        padding: 40px;
         display: grid;
-        grid-template-columns: 430px;
-        grid-template-rows: 180px 180px 180px;
-        gap: 30px 0px;
+        grid-template-columns: 20vw;
+        grid-template-rows: 10vw 10vw 10vw;
+        gap: 40px 30px;
         grid-template-areas:
           "hotel_le_soleil"
           "au_coeur"
@@ -376,89 +377,87 @@ label em {
         grid-area: hotel_le_soleil; 
         width: 100%;
         height: 100%;
-        background-color: #f04a9d;
+        background-color: #0065FC;
     }
       
     .au_coeur { 
         grid-area: au_coeur; 
         width: 100%;
         height: 100%;
-        background-color: #4da7f1;
+        background-color: #0065FC;
     }
       
     .hotel_tout_bleu { 
         grid-area: hotel_tout_bleu; 
         width: 100%;
         height: 100%;
-        background-color: #a1f097;
+        background-color: #0065FC;
     }
       
   /* Activité */
 
   .section_activite {
     grid-area: section_activite;
-    background-color: rgb(70, 68, 68);
-    /* max-width: 1200px;
-    width: 80%; */
-    height: 750px;
-    /* margin-right: 60px; */
+    height: auto;
+    padding: 30px;
 }
 
   .container_activite {
-    /* max-width: 1080px; */
-    width: 90%;
     height: auto;
     margin: auto;
-    background-color: #DEEBFF;
     display: grid;
-    grid-template-columns: repeat(4, 381px);
-    grid-template-rows: 240px 240px;
-    gap: 30px 30px;
+    grid-template-columns: repeat(4, 21vw);
+    grid-template-rows: 15vw 15vw;
+    gap: 40px 40px;
     grid-template-areas:
       "vieux_port fort_de_pomegue parc_national notre_dame_delagarde"
       "vieux_port ile_du_fioul parc_national parc_longchamp";
+  }
+
+  .section_activite h1 {
+      font-size: 1rem;
   }
 
   .vieux_port { 
     grid-area: vieux_port; 
     width: 100%;
     height: 100%;
-    background-color: #46a739;
+    background-color: #0065FC;
 }
 
 .fort_de_pomegue { 
     grid-area: fort_de_pomegue; 
     width: 100%;
     height: 100%;
-    background-color: #1990b4;
+    background-color: #0065FC;
 }
 
 .ile_du_fioul { 
     grid-area: ile_du_fioul; 
     width: 100%;
     height: 100%;
-    background-color: #e93c3c;
+    background-color: #0065FC;
 }
 
 .parc_national { 
     grid-area: parc_national; 
     width: 100%;
     height: 100%;
-    background-color: #dee059;
+    background-color: #0065FC;
 }
 
 .notre_dame_delagarde { 
     grid-area: notre_dame_delagarde; 
     width: 100%;
     height: 100%;
-    background-color: #bb1ebb;
+    background-color: #0065FC;
 }
 
 .parc_longchamp { 
     grid-area: parc_longchamp; 
     width: 100%;
     height: 100%;
-    background-color: #6918d4;
+    background-color: #0065FC;
 }
 
 /* footer */
