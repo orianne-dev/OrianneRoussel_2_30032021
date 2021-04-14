@@ -284,10 +284,10 @@ label em {
 
 .section_hebergement {
     grid-area: section_hebergement;
-    background-color: #DEEBFF;
+    background-color: #F2F2F2;
     width: 63vw;
     height: auto;
-    padding: 0px 0px 0px 40px;
+    padding: 0px 0px 0px 30px;
     margin: 0px 50px 0px 45px;
 }
 
@@ -295,23 +295,34 @@ label em {
     font-size: 1rem;
   }
 
-  .section_hebergement  h2 li {
+.section_hebergement ul {
+    padding-inline-start: 20px;
+}
+
+.section_hebergement  li {
     font-size: 0.9rem;
-  }
+}
 
-  .section_hebergement  h2 {
-      margin: 0;
-  }
-
-  .section_hebergement  figure {
-    background-color: white;
+.section_hebergement  h2 {
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+    font-size: 0.9rem;
+}
 
-  .container_hebergement {
+.section_hebergement  i {
+    color: #0065FC;
+}
+
+#gris {
+    color: #cfcccc;
+}
+
+.section_hebergement  a {
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 4px 4px 13px 1px rgb(0 0 0 / 50%);
+}
+
+.container_hebergement {
     width: 50vw;
     height: auto;
     display: grid;
@@ -323,99 +334,192 @@ label em {
       "hotel_de_la_mer auberge_le_panier hotel_chez_amina";
   }
   
-  .auberge_la_cannebiere { 
+.auberge_la_cannebiere { 
         grid-area: auberge_la_cannebiere; 
-        /* width: 100%;
-        height: 100%; */
     }
 
-    .box_photo_auberge_la_cannebiere {
-        background-image: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+.box_photo_auberge_la_cannebiere {
+        background-image: url(images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
         background-size: cover;
-        width: 95%;
+        width: 96%;
         height: 65%;
-
+        border-radius: 20px 20px 0px 0px;
+        margin: 8px;
+        background-position: 50% 53%;
     }
   
-  .hotel_du_port { 
+.hotel_du_port { 
     grid-area: hotel_du_port; 
-    width: 100%;
-    height: 100%;
-    background-color: #0065FC;
     }
+
+.box_photo_hotel_du_port {
+        background-image: url(images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+        background-size: cover;
+        width: 96%;
+        height: 65%;
+        border-radius: 20px 20px 0px 0px;
+        margin: 8px;
+        background-position: 50% 53%;
+}
   
-  .hotel_les_mouettes { 
+.hotel_les_mouettes { 
       grid-area: hotel_les_mouettes; 
-      width: 100%;
-      height: 100%;
-      background-color: #0065FC;
-    }
+}
+
+.box_photo_hotel_les_mouettes {
+    background-image: url(images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+    background-size: cover;
+    width: 96%;
+    height: 65%;
+    border-radius: 20px 20px 0px 0px;
+    margin: 8px;
+    background-position: 50% 53%;
+}
   
-  .hotel_de_la_mer { 
+.hotel_de_la_mer { 
       grid-area: hotel_de_la_mer; 
-      width: 100%;
-      height: 100%;
-      background-color: #0065FC;
-    }
+}
+
+.box_photo_hotel_de_la_mer {
+    background-image: url(images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+    background-size: cover;
+    width: 96%;
+    height: 65%;
+    border-radius: 20px 20px 0px 0px;
+    margin: 8px;
+    background-position: 50% 53%;
+}
   
-  .auberge_le_panier { 
+.auberge_le_panier { 
       grid-area: auberge_le_panier;
-      width: 100%;
-      height: 100%;
-      background-color: #0065FC;
-    }
+}
+
+.box_photo_auberge_le_panier {
+    background-image: url(images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+    background-size: cover;
+    width: 96%;
+    height: 65%;
+    border-radius: 20px 20px 0px 0px;
+    margin: 8px;
+    background-position: 50% 53%;
+}
   
-  .hotel_chez_amina { 
+.hotel_chez_amina { 
       grid-area: hotel_chez_amina; 
-      width: 100%;
-      height: 100%;
-      background-color: #0065FC;
-    }
+}
 
-    .section_populaire {
+.box_photo_hotel_chez_amina {
+    background-image: url(images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+    background-size: cover;
+    width: 96%;
+    height: 65%;
+    border-radius: 20px 20px 0px 0px;
+    margin: 8px;
+    background-position: 50% 53%;
+}
+
+/* section hebergement populaire */
+
+.section_populaire {
     grid-area: section_populaire;
-    background-color: #DEEBFF;
+    background-color: #F2F2F2;
     height: auto;
-    }
+}
 
-    .section_populaire h1 {
+.section_populaire h1 {
         font-size: 1rem;
     }
+    
+.section_populaire  h2 {
+          margin: 0;
+          font-size: 0.9rem;
+}
+    
+.section_populaire  i {
+        color: #0065FC;
+}
 
-    .container_populaire {
-        width: 20vw;
-        height: auto;
-        padding: 40px;
-        display: grid;
-        grid-template-columns: 20vw;
-        grid-template-rows: 10vw 10vw 10vw;
-        gap: 40px 30px;
-        grid-template-areas:
-          "hotel_le_soleil"
-          "au_coeur"
-          "hotel_tout_bleu";
-    }
+.section_populaire p {
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
+    
+.section_populaire  a {
+    background-color: white;
+    margin: 0;
+    display: flex;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 4px 4px 13px 1px rgb(0 0 0 / 50%);
+}
+    
+.carte_info {
+    display: flex;
+    flex-direction: column;
+    height: -55%;
+    width: 53%;
+    height: 89%;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.container_populaire {
+    width: 22vw;
+    height: auto;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 22vw;
+    grid-template-rows: 10vw 10vw 10vw;
+    gap: 40px 30px;
+    grid-template-areas:
+    "hotel_le_soleil"
+    "au_coeur"
+    "hotel_tout_bleu";
+}
       
-    .hotel_le_soleil { 
+.hotel_le_soleil { 
         grid-area: hotel_le_soleil; 
-        width: 100%;
-        height: 100%;
-        background-color: #0065FC;
-    }
-      
-    .au_coeur { 
+}
+  
+.box_photo_hotel_le_soleil {
+    background-image: url(images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+    background-size: cover;
+    width: 38%;
+    height: 91%;
+    border-radius: 20px 0px 0px 20px;
+    margin-top: 8px;
+    background-position: 50% 53%;
+    margin: 8px 0px 0px 8px;
+}
+
+.au_coeur { 
         grid-area: au_coeur; 
-        width: 100%;
-        height: 100%;
-        background-color: #0065FC;
-    }
+}
+
+.box_photo_au_coeur {
+    background-image: url(images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg);
+    background-size: cover;
+    width: 38%;
+    height: 91%;
+    border-radius: 20px 0px 0px 20px;
+    margin-top: 8px;
+    background-position: 50% 53%;
+    margin: 8px 0px 0px 8px;
+}
       
-    .hotel_tout_bleu { 
+.hotel_tout_bleu { 
         grid-area: hotel_tout_bleu; 
-        width: 100%;
-        height: 100%;
-        background-color: #0065FC;
-    }
+}
+
+.box_photo_hotel_tout_bleu {
+    background-image: url(images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+    background-size: cover;
+    width: 38%;
+    height: 91%;
+    border-radius: 20px 0px 0px 20px;
+    margin-top: 8px;
+    background-position: 50% 53%;
+    margin: 8px 0px 0px 8px;
+}
       
   /* Activité */
 
