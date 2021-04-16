@@ -114,6 +114,8 @@ nav li {
     margin: -8px 0px 24px 0px;
 }
 
+/*formulaire*/
+
 form label {
         display: inline-block;
         width: 45px;
@@ -121,15 +123,13 @@ form label {
 
 form i { padding: 0px 0px 0px 7px; }
 
-/*bouton*/
-
-label em {
+em {
     border: 1px solid #F2F2F2;
     border-radius: 20px 0px 0px 20px;
     background-color: #F2F2F2;
-    margin: 0px ;
+    margin: -6px ;
     font-size: 1rem;
-    padding: 14px 13px 14px 13px;
+    padding: 14px 13px 15px 13px;
 }
 
 .input_rch {
@@ -162,6 +162,16 @@ label em {
     color: #0065FC;
     border: 1px solid #F2F2F2;
 }
+
+.formulaire span {
+    display: flex;
+    margin: 14px;
+    justify-content: center;
+}
+
+.fa-search {
+    content-visibility: hidden;
+} 
 
 /* section filtre */
 
@@ -288,7 +298,7 @@ label em {
 
 /* Hebergement */
 
-.section_hebergement {
+#section_hebergement {
     grid-area: section_hebergement;
     background-color: #F2F2F2;
     width: 61vw;
@@ -298,36 +308,36 @@ label em {
     border-radius: 20px 20px 20px 20px;
 }
 
-.section_hebergement  h1 {
+#section_hebergement  h1 {
     font-size: 1.2rem;
     margin: 35px 0px 0px 0px;
   }
 
-.section_hebergement ul {
+#section_hebergement ul {
     padding-inline-start: 20px;
     line-height: 25px;
     margin: 0px;
 }
 
-.section_hebergement p {
+#section_hebergement p {
     margin: 47px 0px 0px 0px;
     font-weight: bold;
 }
 
-.section_hebergement  li {
+#section_hebergement  li {
     font-size: 0.9rem;
 }
 
-.section_hebergement  h2 {
+#section_hebergement  h2 {
     margin: 0;
     font-size: 0.9rem;
 }
 
-.section_hebergement a:hover {
+#section_hebergement a:hover {
     color: #0065FC;
 }
 
-.section_hebergement  i {
+#section_hebergement  i {
     color: #0065FC;
     font-size: 0.8rem;
 }
@@ -336,7 +346,7 @@ label em {
     color: #cfcccc;
 }
 
-.section_hebergement  a {
+#section_hebergement  a {
     background-color: white;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 4px 4px 13px 1px rgb(0 0 0 / 50%);
@@ -570,7 +580,7 @@ label em {
       
   /* Activité */
 
-.section_activite {
+#section_activite {
     grid-area: section_activite;
     height: auto;
     padding: 80px 30px;
@@ -588,22 +598,22 @@ label em {
       "vieux_port ile_du_fioul parc_national parc_longchamp";
 }
 
-.section_activite h1 {
+#section_activite h1 {
       font-size: 1.2rem;
 }
 
-.section_activite h2 {
+#section_activite h2 {
     font-size: 0.9rem;
     margin: 20px;
 }
 
-.section_activite a {
+#section_activite a {
     background-color: white;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 4px 4px 13px 1px rgb(0 0 0 / 50%);
 }
 
-.section_activite a:hover {
+#section_activite a:hover {
     color: #0065FC;
 }
 
@@ -622,6 +632,7 @@ label em {
 
 .fort_de_pomegue { 
     grid-area: fort_de_pomegue; 
+    height: 17vw;
 }
 
 .box_photo_fort_de_pomegue {
@@ -635,6 +646,8 @@ label em {
 
 .ile_du_fioul { 
     grid-area: ile_du_fioul; 
+    height: 13vw;
+    margin-top: 38px;
 }
 
 .box_photo_ile_du_fioul {
@@ -719,7 +732,7 @@ footer {
     font-weight: bolder;
 }
 
-/* Media queries */
+/* Media queries  PC*/
 
 @media (max-width: 1200px) {
 

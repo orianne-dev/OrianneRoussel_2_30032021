@@ -20,8 +20,8 @@
             </div>  
             <nav>
                 <ul class="menu_nav">
-                    <li><a href="#">Hébergements</a></li>
-                    <li><a href="#">Activités</a></li>
+                    <li><a href="#section_hebergement">Hébergements</a></li>
+                    <li><a href="#section_activite">Activités</a></li>
                 </ul>
             </nav>  
             <div class="inscription">
@@ -39,14 +39,14 @@
                 <div class="t2">
                     <h2>En plein centre ville ou en pleine nature</h2>
                 </div>
-        
                 <div class="formulaire">
                     <form class="form_rch" method="POST" action="traitement.php">
-                        <label for="Ville">
-                            <em><i class="fas fa-map-marker-alt"></i></em>
-                        </label>
+                        <em><i class="fas fa-map-marker-alt"></i></em>
                         <input class="input_rch" type="text" id="Ville" value=" Marseille, France" autofocus >
-                        <input class="input_btn" type="submit" value="Rechercher">
+                            <label class="input_btn">
+                                <span>Rechercher</span>
+                                <i class="fas fa-search"></i>
+                            </label>
                     </form>
                 </div>
             </div>
@@ -88,7 +88,7 @@
 
 <!-- hebergement  -->
 
-        <section class="section_hebergement">
+        <section id="section_hebergement">
             <h1>Hébergement à Marseille</h1>
                 <div class="container_hebergement">
                     <a class="auberge_la_cannebiere" href="#">
@@ -193,7 +193,7 @@
 
 <!-- section activitées -->
 
-        <section class="section_activite">
+        <section id="section_activite">
             <h1>Activités à Marseille</h1>
                 <div class="container_activite">
                     <a class="vieux_port" href="#">
