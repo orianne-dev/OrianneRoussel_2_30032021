@@ -51,6 +51,10 @@ header {
     align-items: flex-end;
 }
 
+.inscription p {
+    font-weight: bold;
+}
+
 .inscription a {
     text-decoration: none;
     color: #0065FC;
@@ -63,8 +67,8 @@ a {
 
 nav  a:hover {
     color: #0065FC;
-    border-top: 2px solid #0065FC;
-    padding-top: 55px;
+    border-top: 3px solid #0065FC;
+    padding-top: 57px;
 }
 
 nav li {
@@ -187,6 +191,7 @@ label em {
     padding: 12px 10px 12px 0px;
     white-space: nowrap;
     margin: 17px;
+    font-weight: bold;
 }
 
 .filtre-container span {
@@ -209,6 +214,7 @@ label em {
 
 .info p {
     border: none;
+    font-weight: 100;
 }
 
 .info span {
@@ -216,7 +222,7 @@ label em {
     border: 1px solid #DEEBFF;
 }
 
-  /* Filtres hover */
+/* Filtres hover */
 
 .fam p:hover {
     color: #0065FC;
@@ -285,18 +291,27 @@ label em {
 .section_hebergement {
     grid-area: section_hebergement;
     background-color: #F2F2F2;
-    width: 63vw;
+    width: 61vw;
     height: auto;
     padding: 0px 0px 0px 30px;
-    margin: 0px 50px 0px 45px;
+    margin: 0px 50px 0px 20px;
+    border-radius: 20px 20px 20px 20px;
 }
 
 .section_hebergement  h1 {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    margin: 35px 0px 0px 0px;
   }
 
 .section_hebergement ul {
     padding-inline-start: 20px;
+    line-height: 25px;
+    margin: 0px;
+}
+
+.section_hebergement p {
+    margin: 47px 0px 0px 0px;
+    font-weight: bold;
 }
 
 .section_hebergement  li {
@@ -308,8 +323,13 @@ label em {
     font-size: 0.9rem;
 }
 
+.section_hebergement a:hover {
+    color: #0065FC;
+}
+
 .section_hebergement  i {
     color: #0065FC;
+    font-size: 0.8rem;
 }
 
 #gris {
@@ -325,6 +345,7 @@ label em {
 .container_hebergement {
     width: 50vw;
     height: auto;
+    padding-top: 35px;
     display: grid;
     grid-template-columns: repeat(3, 18vw);
     grid-template-rows: 14vw 14vw;
@@ -332,11 +353,11 @@ label em {
     grid-template-areas:
       "auberge_la_cannebiere hotel_du_port hotel_les_mouettes"
       "hotel_de_la_mer auberge_le_panier hotel_chez_amina";
-  }
+}
   
 .auberge_la_cannebiere { 
         grid-area: auberge_la_cannebiere; 
-    }
+}
 
 .box_photo_auberge_la_cannebiere {
         background-image: url(images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
@@ -346,11 +367,11 @@ label em {
         border-radius: 20px 20px 0px 0px;
         margin: 8px;
         background-position: 50% 53%;
-    }
+}
   
 .hotel_du_port { 
     grid-area: hotel_du_port; 
-    }
+}
 
 .box_photo_hotel_du_port {
         background-image: url(images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
@@ -424,11 +445,13 @@ label em {
     grid-area: section_populaire;
     background-color: #F2F2F2;
     height: auto;
+    border-radius: 20px 20px 20px 20px;
 }
 
 .section_populaire h1 {
-        font-size: 1rem;
-    }
+    margin: 47px 0px 0px 43px;
+    font-size: 1.2rem;
+}
     
 .section_populaire  h2 {
           margin: 0;
@@ -439,6 +462,30 @@ label em {
         color: #0065FC;
 }
 
+.section_populaire a:hover {
+    color: #0065FC;
+}
+
+.titre_pop {
+    display: flex;
+    justify-content: space-between;
+}
+
+#fleche {
+    color: black;
+    font-size: 1.3rem;
+    margin: 47px 52px 0px 0px;
+}
+
+#etoile {
+    padding: 10px 15px;
+    font-size: 0.8rem;
+}
+
+#info {
+    padding: 10px 15px;
+    line-height: 23px;
+}
 .section_populaire p {
     font-size: 0.9rem;
     margin-top: 4px;
@@ -465,7 +512,7 @@ label em {
 .container_populaire {
     width: 22vw;
     height: auto;
-    padding: 40px;
+    padding: 7px 40px 40px 40px;
     display: grid;
     grid-template-columns: 22vw;
     grid-template-rows: 10vw 10vw 10vw;
@@ -526,7 +573,7 @@ label em {
 .section_activite {
     grid-area: section_activite;
     height: auto;
-    padding: 30px;
+    padding: 80px 30px;
 }
 
 .container_activite {
@@ -542,7 +589,7 @@ label em {
 }
 
 .section_activite h1 {
-      font-size: 1rem;
+      font-size: 1.2rem;
 }
 
 .section_activite h2 {
@@ -554,6 +601,10 @@ label em {
     background-color: white;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 4px 4px 13px 1px rgb(0 0 0 / 50%);
+}
+
+.section_activite a:hover {
+    color: #0065FC;
 }
 
 .vieux_port { 
@@ -644,10 +695,10 @@ footer {
 }
 
 .container_footer {
-    max-width: 1300px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 50px;
+    max-width: 1523px;
 }
 
 .container_footer h1 {
@@ -658,6 +709,14 @@ footer {
     width: 350px;
     margin-right: 50px;
     white-space: nowrap;
+}
+
+.container_footer ul {
+    line-height: 40px;
+}
+
+.container_footer a:hover {
+    font-weight: bolder;
 }
 
 /* Media queries */
