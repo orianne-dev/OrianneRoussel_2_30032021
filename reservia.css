@@ -734,6 +734,147 @@ footer {
 
 /* Media queries  PC*/
 
+@media (max-width: 1366px) {
+
+    /*hebergement*/
+
+    #section_hebergement h2 {
+        font-size: 0.7rem;
+    }
+
+    #section_hebergement li {
+        font-size: 0.7rem;
+    }
+
+    #section_hebergement ul {
+        line-height: 18px;
+    }
+
+    .box_photo_auberge_la_cannebiere {
+        width: 94%;
+        height: 58%;
+    }
+  
+    .box_photo_hotel_du_port {
+        width: 94%;
+        height: 58%;
+    }
+  
+    .box_photo_hotel_les_mouettes {
+        width: 94%;
+        height: 58%;
+    }
+  
+    .box_photo_hotel_de_la_mer {
+        width: 94%;
+        height: 58%;
+    }
+  
+    .box_photo_auberge_le_panier {
+        width: 94%;
+        height: 58%;
+    }
+  
+    .box_photo_hotel_chez_amina {
+        width: 94%;
+        height: 58%;
+    }
+
+    #section_hebergement i {
+        font-size: 0.6rem;
+    }
+
+    #section_hebergement h1 {
+        font-size: 0.9rem;
+    }
+
+    .container_hebergement {
+        grid-template-columns: repeat(3, 17vw);
+    }
+
+    #section_hebergement p {
+        font-size: 0.9rem;
+    }
+
+    /*populaire*/
+
+    .section_populaire h2 {
+        font-size: 0.7rem;
+    }
+
+    .section_populaire p {
+        font-size: 0.7rem;
+    }
+
+    #info {
+        padding: 0px 15px;
+        line-height: 17px;
+    }
+
+    .section_populaire i {
+        font-size: 0.6rem;
+    }
+
+    .box_photo_hotel_le_soleil {
+        width: 37%;
+        height: 89%;
+    }
+
+    .box_photo_au_coeur {
+        width: 37%;
+        height: 89%;
+    }
+    
+    .box_photo_hotel_tout_bleu {
+        width: 37%;
+        height: 89%;
+    }
+
+    .section_populaire {
+        width: 25vw;
+    }
+
+    .container_populaire {
+        padding: 7px 40px 40px 29px;
+        grid-template-columns: 21vw;
+    }
+
+    .section_populaire h1 {
+        margin: 32px 0px 0px 19px;
+        font-size: 0.9rem;
+    }
+
+    #fleche {
+        font-size: 1rem;
+        margin: 30px 21px 14px 0px;
+    }
+
+    /*activite*/
+
+    #section_activite h2 {
+        font-size: 0.8rem;
+        margin: 14px;
+    }
+
+    /*footer*/
+
+    .container_footer ul {
+        line-height: 33px;
+        font-size: 0.8rem;
+    }
+
+    .container_footer h1 {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        height: 270px;
+    }
+
+
+}
+
+
 @media (max-width: 1200px) {
 
     #bloc_page {
