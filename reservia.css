@@ -583,7 +583,7 @@ em {
 #section_activite {
     grid-area: section_activite;
     height: auto;
-    padding: 80px 30px;
+    padding: 80px 0px;
 }
 
 .container_activite {
@@ -710,8 +710,8 @@ footer {
 .container_footer {
     display: flex;
     justify-content: space-between;
-    padding: 50px;
-    max-width: 1523px;
+    /* padding: 50px;
+    max-width: 1523px; */
 }
 
 .container_footer h1 {
@@ -835,7 +835,7 @@ footer {
     }
 
     .container_populaire {
-        padding: 7px 40px 40px 29px;
+        padding: 7px 0px 40px 29px;
         grid-template-columns: 21vw;
     }
 
@@ -985,11 +985,11 @@ footer {
 
     .filtre-container {
         margin: 0px 10px 0px 20px;
-        width: 100%;
+        width: 90%;
         height: 250px;
         display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: 50px 1fr 50px;
+        grid-template-columns: 90%;
+        grid-template-rows: 50px 50% 50px;
         gap: 0px 0px;
         grid-template-areas:
           "filtres"
@@ -1144,6 +1144,212 @@ footer {
 
     footer {
         height: 240px;
+    }
+
+}
+
+/*tablette*/
+
+@media (max-width: 768px) {
+
+    /*en tete*/
+
+    .formulaire span {
+        visibility: hidden;
+    }
+
+    .fa-search {
+        content-visibility: visible;
+        font-size: 0.9rem;
+        margin: -29px 0px 0px 11px;
+        position: absolute;
+    }
+
+    .input_btn {
+        width: 60px;
+    }
+
+    .filtre-container p {
+        font-size: 0.8rem;
+    }
+
+    .btn_filtre p {
+        margin: 10px 25px 10px 0px;
+    }
+
+    .btn_filtre {
+        margin-top: 26px;
+        flex-wrap: nowrap;
+    }
+
+    .filtre-container {
+        height: 175px;
+        grid-template-rows: 50px 40% 50px;
+    }
+
+    .filtre-container span {
+        border: 3px solid #DEEBFF;
+        font-size: 0.9rem;
+        margin-right: 3px;
+    }
+
+    /*main*/
+
+    .section_populaire {
+        width: 90vw;
+    }
+
+    .container_populaire {
+        padding: 20px; 
+        grid-template-columns: 40vw 40vw;
+        grid-template-rows: 20vw 20vw;
+        gap: 30px 30px;
+        grid-template-areas: 
+        "hotel_le_soleil au_coeur" 
+        "hotel_tout_bleu hotel_tout_bleu";
+    }
+
+    #fleche {
+        margin: 0px;
+    }
+
+    .section_populaire h1 {
+        font-size: 1rem;
+        margin: 0px;
+        padding: 0px 40px 0px 0px;
+    }
+
+    .section_populaire h2 {
+        font-size: 0.8rem;
+    }
+
+    .section_populaire p {
+        font-size: 0.8rem;
+    }
+
+    #info {
+        line-height: 18px;
+    }
+
+    .titre_pop {
+        justify-content: center;
+        margin-top: 21px;
+    }
+
+    .hotel_tout_bleu {
+        width: 50%;
+        justify-self: center;
+    }
+
+    #section_hebergement {
+        grid-area: section_hebergement;
+        background-color: #F2F2F2;
+        width: 90vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hebergement_pop {
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-content: center;
+    }
+
+    .container_hebergement {
+        grid-template-columns: repeat(2, 35vw);
+    grid-template-rows: 25vw 25vw 25vw;
+    gap: 30px 30px;
+    padding-left: 60px;
+        grid-template-areas:
+            "auberge_la_cannebiere hotel_du_port"
+            "hotel_les_mouettes hotel_de_la_mer"
+            "auberge_le_panier hotel_chez_amina";
+    }
+
+    #section_hebergement h1 {
+        font-size: 1rem;
+        justify-content: center;
+    }
+
+    #section_hebergement h2 {
+        font-size: 0.8rem;
+    }
+
+    #section_hebergement li {
+        font-size: 0.8rem;
+    }
+
+    #section_hebergement i {
+        font-size: 0.6rem;
+    }
+
+    #section_hebergement ul {
+        line-height: 19px;
+    }
+
+    #section_hebergement p {
+        font-size: 0.8rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    #section_hebergement {
+        background-color: white;
+    }
+
+    /*activité*/
+
+    .container_activite {
+        grid-template-columns: repeat(3, 28vw);
+        grid-template-rows: 20vw 20vw;
+        gap: 30px 30px;
+        grid-template-areas:
+            "vieux_port fort_de_pomegue ile_du_fioul" 
+            "parc_national notre_dame_delagarde parc_longchamp";
+    }
+
+    .ile_du_fioul {
+        margin-top: 0px;
+        height: 20vw;
+    }
+
+    .fort_de_pomegue {
+        height: 20vw;
+    }
+
+    .box_photo_parc_national {
+        height: 80%;
+    }
+
+    .box_photo_vieux_port { 
+        height: 80%;
+    }
+
+    #section_activite h2 {
+        font-size: 0.7rem;
+        margin: 9px 0px 0px 0px;
+        justify-content: center;
+    }
+
+    /*footer*/
+
+    .container_footer {
+        padding: 0px;
+    }
+
+    .container_footer ul {
+        line-height: 24px;
+        font-size: 0.6rem;
+    }
+
+    .container_footer h1 {
+        font-size: 0.6rem;
+    }
+
+    footer {
+        height: 125px;
     }
 
 }
