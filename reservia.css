@@ -337,13 +337,13 @@ em {
     color: #0065FC;
 }
 
+#gris {
+    color: #cfcccc;
+}
+
 #section_hebergement  i {
     color: #0065FC;
     font-size: 0.8rem;
-}
-
-#gris {
-    color: #cfcccc;
 }
 
 #section_hebergement  a {
@@ -1500,6 +1500,213 @@ footer {
 
 } 
 
+/*telephone*/
+
+@media (max-width: 375px) {
+
+    .menu_nav {
+        font-size: 0.75rem;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .logo_reservia {
+        padding: 0px 0px 0px 27px;
+    }
+
+    .logo_reservia img {
+        margin-top: 0px;
+    }
+
+    .inscription {
+        padding: 0px 36px 5px 0px;
+    }
+
+    .inscription p {
+        font-size: 0.75rem;
+    }
+
+    .menu_nav {
+        font-size: 0.75rem;
+    }
+
+    .recherche h1 {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .recherche h2 {
+        font-size: 0.7rem;
+        margin: 19px;
+    }
+
+    .container_rch {
+        height: 200px;
+        grid-template-rows: 65px 88px 70px;
+    }
+
+    .input_btn {
+        width: 50px;
+    }
+
+    em {
+        font-size: 0.9rem;
+        padding: 14px 13px 17px 9px;
+    }
+
+    .formulaire {
+        margin: -26px 35px 0px 0px;
+    }
+
+    .info {
+        margin-left: 2px;
+    }
+
+    /*filtre*/
+
+    .btn_filtre {
+        flex-wrap: wrap;
+    }
+
+    .filtre-container {
+        height: 280px;
+    }
+
+    .filtre-container p {
+        padding: 14px 12px 9px 0px;
+        font-size: 0.6rem;
+        line-height: 22px;
+    }
+
+    .info p {
+        white-space: break-spaces;
+    }
+
+    /*hebergement*/
+
+    .main_container {
+        margin: 0px;
+    }
+    .container_populaire {
+        padding-left: 10px;
+        grid-template-columns: 95vw;
+        grid-template-rows: repeat(3, 42vw);
+        gap: 20px 20px;
+        grid-template-areas:
+            "hotel_le_soleil"
+             "au_coeur"
+            "hotel_tout_bleu";
+    }
+
+    .hotel_tout_bleu {
+        width: 100%;
+    }
+
+    .section_populaire {
+        margin-top: 20px;
+        width: 100vw;
+        border-radius: 0px;
+    }
+
+    .section_populaire h1 {
+        padding: 0px 156px 0px 0px;
+        font-size: 0.9rem;
+    }
+
+    .container_hebergement {
+        padding-left: 10px;
+        grid-template-columns: 95vw;
+        grid-template-rows: repeat(6, 55vw);
+        gap: 20px 20px;
+        grid-template-areas:
+            "auberge_la_cannebiere"
+             "hotel_du_port"
+            "hotel_les_mouettes" 
+            "hotel_de_la_mer"
+            "auberge_le_panier" 
+            "hotel_chez_amina";
+    }
+
+    .box_photo_auberge_la_cannebiere {
+        margin: 10px;
+    }
+
+    .box_photo_hotel_du_port {
+        margin: 10px;
+    }
+
+    .box_photo_hotel_les_mouettes {
+        margin: 10px;
+    }
+
+    .box_photo_hotel_de_la_mer {
+        margin: 10px;
+    }
+
+    .box_photo_auberge_le_panier {
+        margin: 10px;
+    }
+
+    .box_photo_hotel_chez_amina {
+        margin: 10px;
+    }
+
+    #gris {
+        color: #cfcccc;
+    }
+
+
+    /*activite*/
+
+    .container_activite {
+        padding-left: 11px;
+        grid-template-columns: 95vw;
+        grid-template-rows: repeat(6, 47vw);
+        gap: 20px 20px;
+        grid-template-areas:
+            "vieux_port"
+             "fort_de_pomegue" 
+             "ile_du_fioul"
+            "parc_national" 
+            "notre_dame_delagarde" 
+            "parc_longchamp";
+    }
+
+    .fort_de_pomegue {
+        height: 100%;
+    }
+
+    .ile_du_fioul {
+        height: 100%;
+    }
+
+    /*footer*/
+
+    .container_footer {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item_footer {
+        width: 250px;
+        margin-right: 0px;
+        white-space: nowrap;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    .container_footer h1 {
+        font-size: 0.8rem;
+    }
+
+    .container_footer ul {
+        line-height: 29px;
+        font-size: 0.7rem;
+    }
+}
   
 
 
