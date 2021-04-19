@@ -185,7 +185,7 @@ em {
     gap: 0px 0px;
     grid-template-areas:
       "filtres btn_filtre"
-      "info info";
+      "info-i info-i";
 }
 
 .btn_filtre {
@@ -222,12 +222,12 @@ em {
     border: none;
 }
 
-.info p {
+.info-i p {
     border: none;
     font-weight: 100;
 }
 
-.info span {
+.info-i span {
     background-color: white;
     border: 1px solid #DEEBFF;
 }
@@ -328,7 +328,7 @@ em {
     font-size: 0.9rem;
 }
 
-#section_hebergement  h2 {
+#section_hebergement strong {
     margin: 0;
     font-size: 0.9rem;
 }
@@ -492,7 +492,7 @@ em {
     font-size: 0.8rem;
 }
 
-#info {
+.info {
     padding: 10px 15px;
     line-height: 23px;
 }
@@ -734,11 +734,85 @@ footer {
 
 /* Media queries  PC*/
 
-@media (max-width: 1366px) {
+@media (max-width: 1812px) {
+
+    #section_hebergement strong {
+        font-size: 0.8rem;
+    }
+
+    #section_hebergement li {
+        font-size: 0.8rem;
+    }
+
+    #section_hebergement i {
+        font-size: 0.6rem;
+    }
+
+    #section_hebergement ul {
+        line-height: 23px;
+    }
+
+    .section_populaire h2 {
+        font-size: 0.8rem;
+    }
+
+    .section_populaire p {
+        font-size: 0.8rem;
+    }
+
+    #etoile {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 1674px) {
+
+    .box_photo_auberge_la_cannebiere {
+        height: 60%;
+    }
+
+    .box_photo_hotel_les_mouettes {
+        height: 60%;
+    }
+
+    .box_photo_hotel_du_port {
+        height: 60%;
+    }
+
+    .box_photo_hotel_de_la_mer {
+        height: 60%;
+    }
+
+    .box_photo_auberge_le_panier {
+        height: 60%;
+    }
+
+    .box_photo_hotel_chez_amina {
+        height: 60%;
+    }
+
+    .info {
+        padding: 0px;
+    }
+
+    #etoile {
+        padding: 0px;
+    }
+
+}
+
+@media (max-width: 1551px) {
+
+    #section_hebergement strong {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 1485px) {
 
     /*hebergement*/
 
-    #section_hebergement h2 {
+    #section_hebergement strong {
         font-size: 0.7rem;
     }
 
@@ -806,7 +880,7 @@ footer {
         font-size: 0.7rem;
     }
 
-    #info {
+    .info {
         padding: 0px 15px;
         line-height: 17px;
     }
@@ -875,7 +949,7 @@ footer {
 }
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1284px) {
 
     #bloc_page {
         margin: 0px;
@@ -994,7 +1068,7 @@ footer {
         grid-template-areas:
           "filtres"
           "btn_filtre"
-          "info";
+          "info-i";
     }
 
     .filtres { 
@@ -1020,8 +1094,8 @@ footer {
         font-size: 0.9rem;
     }
     
-    .info {
-        grid-area: info;
+    .info-i {
+        grid-area: info-i;
         margin-top: 15px;
         font-size: 0.7rem;
     }
@@ -1042,7 +1116,7 @@ footer {
         gap: 35px 35px;
     }
 
-    #section_hebergement h2 {
+    #section_hebergement strong {
         font-size: 0.7rem;
         padding: 0px;
         justify-content: flex-start;
@@ -1100,7 +1174,7 @@ footer {
         padding: 0px;
     }
 
-    #info {
+    .info {
         padding: 0px 7px;
         line-height: 14px;
     }
@@ -1150,7 +1224,7 @@ footer {
 
 /*tablette*/
 
-@media (max-width: 768px) {
+@media (max-width: 1161px) {
 
     /*en tete*/
 
@@ -1227,7 +1301,7 @@ footer {
         font-size: 0.8rem;
     }
 
-    #info {
+    .info {
         line-height: 18px;
     }
 
@@ -1273,7 +1347,7 @@ footer {
         justify-content: center;
     }
 
-    #section_hebergement h2 {
+    #section_hebergement strong {
         font-size: 0.8rem;
     }
 
@@ -1354,7 +1428,7 @@ footer {
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 674px) {
 
     .logo_reservia img {
         width: 85px;
@@ -1414,8 +1488,100 @@ footer {
         padding: 5px;
     }
     
-    .info {
+    .info-i {
         font-size: 0.6rem;
+    }
+
+    .info {
+        line-height: 15px;
+    }
+}
+
+@media (max-width: 656px) {
+
+    .section_populaire h2 {
+        font-size: 0.65rem;
+    }
+
+    .section_populaire p {
+        font-size: 0.65rem;
+    }
+
+    #section_hebergement strong {
+        font-size: 0.65rem;
+    }
+
+    #section_hebergement li {
+        font-size: 0.65rem;
+    }
+
+    #section_hebergement i {
+        font-size: 0.5rem;
+    }
+
+    .section_populaire i {
+        font-size: 0.5rem;
+    }
+
+    #section_activite h2 {
+        font-size: 0.65rem;
+    }
+
+}
+
+@media (max-width: 640px) {
+
+    .container_populaire {
+        padding-left: 10px;
+        grid-template-columns: 95vw;
+        grid-template-rows: repeat(3, 42vw);
+        gap: 20px 20px;
+        grid-template-areas:
+            "hotel_le_soleil"
+             "au_coeur"
+            "hotel_tout_bleu";
+    }
+
+    .container_hebergement {
+        padding-left: 10px;
+        grid-template-columns: 95vw;
+        grid-template-rows: repeat(6, 55vw);
+        gap: 20px 20px;
+        grid-template-areas:
+            "auberge_la_cannebiere"
+             "hotel_du_port"
+            "hotel_les_mouettes" 
+            "hotel_de_la_mer"
+            "auberge_le_panier" 
+            "hotel_chez_amina";
+    }
+
+    .container_activite {
+        padding-left: 11px;
+        grid-template-columns: 95vw;
+        grid-template-rows: repeat(6, 47vw);
+        gap: 20px 20px;
+        grid-template-areas:
+            "vieux_port"
+             "fort_de_pomegue" 
+             "ile_du_fioul"
+            "parc_national" 
+            "notre_dame_delagarde" 
+            "parc_longchamp";
+    }
+
+    .container_populaire {
+        padding-left: 51px;
+        grid-template-columns: 80vw;
+        grid-template-rows: repeat(3, 35vw);
+        gap: 25px 25px;
+    }
+
+    .container_hebergement {
+        padding-left: 51px;
+        grid-template-columns: 80vw;
+        grid-template-rows: repeat(6, 43vw);
+        gap: 25px 25px;
     }
 }
   
@@ -1491,7 +1657,7 @@ footer {
         margin: -22px 28px 0px 0px;
     }
 
-    .info {
+    .info-i {
         margin-left: 2px;
     }
 
@@ -1529,12 +1695,12 @@ footer {
         margin-right: 5px;
     }
 
-    .info {
+    .info-i {
         font-size: 0.5rem;
         margin-left: -16px;
     }
 
-    .info span {
+    .info-i span {
         font-size: 0.7rem;
         padding: 2px;
         border: 1px solid #DEEBFF;
@@ -1544,7 +1710,7 @@ footer {
         margin-top: 8px;
     }
 
-    .info p {
+    .info-i p {
         white-space: break-spaces;
     }
 
@@ -1731,7 +1897,7 @@ footer {
         margin: -26px 35px 0px 0px;
     }
 
-    .info {
+    .info-i {
         margin-left: 2px;
     }
 
@@ -1751,7 +1917,7 @@ footer {
         line-height: 22px;
     }
 
-    .info p {
+    .info-i p {
         white-space: break-spaces;
     }
 
