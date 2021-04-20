@@ -18,7 +18,7 @@ ol, ul {
 /* mise en page */
 
 #en_tete {
-    margin: 0px 80px 0px 30px;
+    margin: 0px 80px 0px 60px;
 
 }
 
@@ -68,7 +68,7 @@ a {
 nav  a:hover {
     color: #0065FC;
     border-top: 3px solid #0065FC;
-    padding-top: 57px;
+    padding-top: 50px;
 }
 
 nav li {
@@ -142,6 +142,7 @@ em {
 }
 
 .input_btn {
+    cursor: pointer;
     background-color: #0065FC;
     color: white;
     border: 1px solid #0065FC;
@@ -170,7 +171,7 @@ em {
 }
 
 .fa-search {
-    content-visibility: hidden;
+    visibility: hidden;
 } 
 
 /* section filtre */
@@ -279,7 +280,7 @@ em {
 /* main */
 
 .main_container {
-    margin: 0px 80px 0px 30px;
+    margin: 0px 0px 0px 30px;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
@@ -314,7 +315,6 @@ em {
   }
 
 #section_hebergement ul {
-    padding-inline-start: 20px;
     line-height: 25px;
     margin: 0px;
 }
@@ -366,17 +366,21 @@ em {
 }
   
 .auberge_la_cannebiere { 
-        grid-area: auberge_la_cannebiere; 
+    grid-area: auberge_la_cannebiere; 
+}
+
+#section_hebergement .auberge_la_cannebiere i:last-child {
+    color: rgb(195, 188, 188);
 }
 
 .box_photo_auberge_la_cannebiere {
-        background-image: url(images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
-        background-size: cover;
-        width: 96%;
-        height: 65%;
-        border-radius: 20px 20px 0px 0px;
-        margin: 8px;
-        background-position: 50% 53%;
+    background-image: url(images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+    background-size: cover;
+    width: 96%;
+    height: 65%;
+    border-radius: 20px 20px 0px 0px;
+    margin: 8px;
+    background-position: 50% 53%;
 }
   
 .hotel_du_port { 
@@ -384,17 +388,21 @@ em {
 }
 
 .box_photo_hotel_du_port {
-        background-image: url(images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
-        background-size: cover;
-        width: 96%;
-        height: 65%;
-        border-radius: 20px 20px 0px 0px;
-        margin: 8px;
-        background-position: 50% 53%;
+    background-image: url(images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+    background-size: cover;
+    width: 96%;
+    height: 65%;
+    border-radius: 20px 20px 0px 0px;
+    margin: 8px;
+    background-position: 50% 53%;
 }
   
 .hotel_les_mouettes { 
-      grid-area: hotel_les_mouettes; 
+    grid-area: hotel_les_mouettes; 
+}
+
+#section_hebergement .hotel_les_mouettes i:last-child {
+    color: rgb(195, 188, 188);
 }
 
 .box_photo_hotel_les_mouettes {
@@ -408,7 +416,11 @@ em {
 }
   
 .hotel_de_la_mer { 
-      grid-area: hotel_de_la_mer; 
+    grid-area: hotel_de_la_mer; 
+}
+
+#section_hebergement .hotel_de_la_mer i:nth-child(n+4) {
+    color: rgb(195, 188, 188);
 }
 
 .box_photo_hotel_de_la_mer {
@@ -422,7 +434,11 @@ em {
 }
   
 .auberge_le_panier { 
-      grid-area: auberge_le_panier;
+    grid-area: auberge_le_panier;
+}
+
+#section_hebergement .auberge_le_panier i:last-child {
+    color: rgb(195, 188, 188);
 }
 
 .box_photo_auberge_le_panier {
@@ -436,7 +452,7 @@ em {
 }
   
 .hotel_chez_amina { 
-      grid-area: hotel_chez_amina; 
+    grid-area: hotel_chez_amina; 
 }
 
 .box_photo_hotel_chez_amina {
@@ -464,12 +480,12 @@ em {
 }
     
 .section_populaire  h2 {
-          margin: 0;
-          font-size: 0.9rem;
+    margin: 0;
+    font-size: 0.9rem;
 }
     
 .section_populaire  i {
-        color: #0065FC;
+    color: #0065FC;
 }
 
 .section_populaire a:hover {
@@ -487,7 +503,7 @@ em {
     margin: 47px 52px 0px 0px;
 }
 
-#etoile {
+.etoile {
     padding: 10px 15px;
     font-size: 0.8rem;
 }
@@ -512,7 +528,6 @@ em {
 .carte_info {
     display: flex;
     flex-direction: column;
-    height: -55%;
     width: 53%;
     height: 89%;
     justify-content: space-between;
@@ -534,7 +549,7 @@ em {
 }
       
 .hotel_le_soleil { 
-        grid-area: hotel_le_soleil; 
+    grid-area: hotel_le_soleil; 
 }
   
 .box_photo_hotel_le_soleil {
@@ -549,7 +564,11 @@ em {
 }
 
 .au_coeur { 
-        grid-area: au_coeur; 
+    grid-area: au_coeur; 
+}
+
+.au_coeur i:last-child {
+    color: rgb(195, 188, 188);
 }
 
 .box_photo_au_coeur {
@@ -564,7 +583,11 @@ em {
 }
       
 .hotel_tout_bleu { 
-        grid-area: hotel_tout_bleu; 
+    grid-area: hotel_tout_bleu; 
+}
+
+.hotel_tout_bleu i:last-child {
+    color: rgb(195, 188, 188);
 }
 
 .box_photo_hotel_tout_bleu {
@@ -588,18 +611,19 @@ em {
 
 .container_activite {
     height: auto;
-    margin: auto;
+    margin: 0px 0px 0px 30px;
     display: grid;
     grid-template-columns: repeat(4, 21vw);
     grid-template-rows: 15vw 15vw;
-    gap: 40px 40px;
+    gap: 30px 30px;
     grid-template-areas:
       "vieux_port fort_de_pomegue parc_national notre_dame_delagarde"
       "vieux_port ile_du_fioul parc_national parc_longchamp";
 }
 
 #section_activite h1 {
-      font-size: 1.2rem;
+    font-size: 1.2rem;
+    margin: 0px 0px 20px 30px;
 }
 
 #section_activite h2 {
@@ -710,12 +734,12 @@ footer {
 .container_footer {
     display: flex;
     justify-content: space-between;
-    /* padding: 50px;
-    max-width: 1523px; */
+    margin: 0px 0px 0px 30px;
 }
 
-.container_footer h1 {
+.box_footer {
     font-size: 1rem;
+    font-weight: bolder;
 }
 
 .item_footer {
@@ -760,7 +784,7 @@ footer {
         font-size: 0.8rem;
     }
 
-    #etoile {
+    .etoile {
         font-size: 0.7rem;
     }
 }
@@ -795,7 +819,7 @@ footer {
         padding: 0px;
     }
 
-    #etoile {
+    .etoile {
         padding: 0px;
     }
 
@@ -937,7 +961,7 @@ footer {
         font-size: 0.8rem;
     }
 
-    .container_footer h1 {
+    .box_footer {
         font-size: 0.9rem;
     }
 
@@ -1050,7 +1074,7 @@ footer {
     }
     
     .input_btn {
-        height: 50px;
+        height: 52px;
         width: 120px;
         font-size: 0.8rem;
     }
@@ -1101,6 +1125,10 @@ footer {
     }
 
     /*hebergement*/
+
+    #section_hebergement {
+        margin: 0px 50px 0px 0px;
+    }
 
     .hebergement_pop {
         margin-top: 25px;
@@ -1179,9 +1207,15 @@ footer {
         line-height: 14px;
     }
 
-    #etoile {
+    .etoile {
         padding: 10px 7px;
         font-size: 0.6rem;
+    }
+
+    /*activite*/
+
+    .container_activite {
+        margin: 0px 0px 0px 30px;
     }
 
     #section_activite h1 {
@@ -1200,7 +1234,7 @@ footer {
 
     /*footer*/
 
-    .container_footer h1 {
+    .box_footer {
         font-size: 0.7rem;
         justify-content: flex-start;
         margin: 0px;
@@ -1214,6 +1248,7 @@ footer {
 
     .container_footer {
         padding: 35px;
+        margin: 0px;
     }
 
     footer {
@@ -1233,7 +1268,8 @@ footer {
     }
 
     .fa-search {
-        content-visibility: visible;
+        visibility: visible;
+        display: flex;
         font-size: 0.9rem;
         margin: -29px 0px 0px 11px;
         position: absolute;
@@ -1269,12 +1305,16 @@ footer {
 
     /*main*/
 
+    .main_container {
+        margin: 0px;
+    }
+
     .section_populaire {
         width: 90vw;
     }
 
     .container_populaire {
-        padding: 20px; 
+        
         grid-template-columns: 40vw 40vw;
         grid-template-rows: 20vw 20vw;
         gap: 30px 30px;
@@ -1418,12 +1458,31 @@ footer {
         font-size: 0.6rem;
     }
 
-    .container_footer h1 {
+    .box_footer {
         font-size: 0.6rem;
     }
 
     footer {
         height: 125px;
+    }
+
+}
+
+@media (max-width: 918px) {
+    .filtre-container {
+        margin: 0px 10px 50px 20px;
+    }
+
+    .filtre-container {
+        grid-template-rows: 50px 75% 50px;
+    }
+
+    .btn_filtre {
+        flex-wrap: wrap;
+    }
+
+    em {
+        padding: 13px 13px 15px 13px;
     }
 
 }
@@ -1453,6 +1512,16 @@ footer {
 
     /*bouton recherche*/
 
+    em {
+        padding: 12px 12px 16px 10px;
+    }
+
+    .input_btn {
+        height: 52px;
+        width: 57px;
+        font-size: 0.7rem;
+    }
+
     label em {
         font-size: 1.2rem;
     }
@@ -1462,11 +1531,6 @@ footer {
         font-size: 0.7rem;
     }
     
-    .input_btn {
-        height: 50px;
-        width: 100px;
-        font-size: 0.7rem;
-    }
 
     /*filtre*/
 
@@ -1531,6 +1595,61 @@ footer {
 
 @media (max-width: 640px) {
 
+    .main_container {
+        margin: 0px;
+        grid-template-columns: 95vw;
+    }
+
+    .hotel_tout_bleu {
+        width: 100%;
+    }
+
+    .section_populaire h2 {
+        font-size: 1rem;
+        justify-content: flex-start;
+    }
+
+    .section_populaire p {
+        font-size: 1rem;
+    }
+
+    .section_populaire i {
+        font-size: 0.8rem;
+    }
+
+    .info {
+        line-height: 25px;
+    }
+
+    #section_hebergement strong {
+        font-size: 1rem;
+    }
+
+    #section_hebergement li {
+        font-size: 1rem;
+    }
+
+    #section_hebergement i {
+        font-size: 0.8rem;
+    }
+
+    #section_hebergement ul {
+        line-height: 25px;
+    }
+
+    #section_activite h2 {
+        font-size: 0.9rem;
+    }
+
+    .fort_de_pomegue {
+        height: 100%;
+    }
+
+    .ile_du_fioul {
+        height: 100%;
+    }
+
+
     .container_populaire {
         padding-left: 10px;
         grid-template-columns: 95vw;
@@ -1582,6 +1701,14 @@ footer {
         grid-template-columns: 80vw;
         grid-template-rows: repeat(6, 43vw);
         gap: 25px 25px;
+    }
+
+    .filtre-container {
+        height: 250px;
+    }
+
+    .filtre-container p {
+        margin: 0px 10px 0px 0px;
     }
 }
   
@@ -1718,7 +1845,9 @@ footer {
 
     .main_container {
         margin: 0px;
+        grid-template-columns: 100%;
     }
+
     .container_populaire {
         padding-left: 10px;
         grid-template-columns: 95vw;
@@ -1787,11 +1916,40 @@ footer {
         color: #cfcccc;
     }
 
+    .section_populaire h2 {
+        font-size: 0.7rem;
+        justify-content: flex-start;
+    }
+
+    .section_populaire p {
+        font-size: 0.7rem;
+    }
+
+    .section_populaire i {
+        font-size: 0.6rem;
+    }
+
+    #section_hebergement strong {
+        font-size: 0.7rem;
+    }
+
+    #section_hebergement li {
+        font-size: 0.7rem;
+    }
+
+    #section_hebergement i {
+        font-size: 0.6rem;
+    }
+
+    #section_activite h2 {
+        font-size: 0.7rem;
+    }
 
     /*activite*/
 
     .container_activite {
-        padding-left: 11px;
+        margin: 0px;
+        padding-left: 0px;
         grid-template-columns: 95vw;
         grid-template-rows: repeat(6, 47vw);
         gap: 20px 20px;
@@ -1802,6 +1960,10 @@ footer {
             "parc_national" 
             "notre_dame_delagarde" 
             "parc_longchamp";
+    }
+
+    #section_activite {
+        margin-left: 9px;
     }
 
     .fort_de_pomegue {
@@ -1830,7 +1992,7 @@ footer {
         height: auto;
     }
 
-    .container_footer h1 {
+    .box_footer {
         font-size: 0.8rem;
     }
 
@@ -1990,15 +2152,15 @@ footer {
         margin: 10px;
     }
 
-    #gris {
-        color: #cfcccc;
+    #section_hebergement ul {
+        line-height: 20px;
     }
 
 
     /*activite*/
 
     .container_activite {
-        padding-left: 11px;
+        padding-left: 0px;
         grid-template-columns: 95vw;
         grid-template-rows: repeat(6, 47vw);
         gap: 20px 20px;
@@ -2037,7 +2199,7 @@ footer {
         height: auto;
     }
 
-    .container_footer h1 {
+    .box_footer {
         font-size: 0.8rem;
     }
 
