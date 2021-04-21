@@ -68,7 +68,7 @@ a {
 nav  a:hover {
     color: #0065FC;
     border-top: 3px solid #0065FC;
-    padding-top: 50px;
+    padding-top: 53px;
 }
 
 nav li {
@@ -127,14 +127,15 @@ em {
     border: 1px solid #F2F2F2;
     border-radius: 20px 0px 0px 20px;
     background-color: #F2F2F2;
-    margin: -6px ;
+    margin: 0 -5px 0 0 ;
     font-size: 1rem;
-    padding: 14px 13px 15px 13px;
+    padding: 15px 13px 15px 13px;
 }
 
 .input_rch {
     border: 1px solid #F2F2F2;
-    height: 50px;
+    height: 46px;
+    text-indent: 5px;
     width: 260px;
     font-size: 1rem;
     position: relative;
@@ -148,10 +149,11 @@ em {
     border: 1px solid #0065FC;
     border-radius: 0px 20px 20px 0px;
     transition: all 0.5s ease;
-    height: 54px;
+    height: 48px;
     width: 150px;
     font-size: 1rem;
     position: absolute;
+    line-height: 23px;
 }
 
 .input_btn:active {
@@ -179,6 +181,8 @@ em {
 .filtre-container {
     width: 80%;
     height: 200px;
+    overflow: hidden;
+    padding-top: 20px;
     margin-top: 50px;
     display: grid;
     grid-template-columns: 100px 70% ;
@@ -315,7 +319,7 @@ em {
   }
 
 #section_hebergement ul {
-    line-height: 25px;
+    line-height: 21px;
     margin: 0px;
 }
 
@@ -390,7 +394,7 @@ em {
 .box_photo_hotel_du_port {
     background-image: url(images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
     background-size: cover;
-    width: 96%;
+    width: 94%;
     height: 65%;
     border-radius: 20px 20px 0px 0px;
     margin: 8px;
@@ -408,7 +412,7 @@ em {
 .box_photo_hotel_les_mouettes {
     background-image: url(images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg);
     background-size: cover;
-    width: 96%;
+    width: 94%;
     height: 65%;
     border-radius: 20px 20px 0px 0px;
     margin: 8px;
@@ -426,7 +430,7 @@ em {
 .box_photo_hotel_de_la_mer {
     background-image: url(images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
     background-size: cover;
-    width: 96%;
+    width: 94%;
     height: 65%;
     border-radius: 20px 20px 0px 0px;
     margin: 8px;
@@ -444,7 +448,7 @@ em {
 .box_photo_auberge_le_panier {
     background-image: url(images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
     background-size: cover;
-    width: 96%;
+    width: 94%;
     height: 65%;
     border-radius: 20px 20px 0px 0px;
     margin: 8px;
@@ -458,7 +462,7 @@ em {
 .box_photo_hotel_chez_amina {
     background-image: url(images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
     background-size: cover;
-    width: 96%;
+    width: 94%;
     height: 65%;
     border-radius: 20px 20px 0px 0px;
     margin: 8px;
@@ -475,7 +479,7 @@ em {
 }
 
 .section_populaire h1 {
-    margin: 47px 0px 0px 43px;
+    margin: 35px 0px 0px 43px;
     font-size: 1.2rem;
 }
     
@@ -500,7 +504,7 @@ em {
 #fleche {
     color: black;
     font-size: 1.3rem;
-    margin: 47px 52px 0px 0px;
+    margin: 35px 52px 0px 0px;
 }
 
 .etoile {
@@ -537,7 +541,7 @@ em {
 .container_populaire {
     width: 22vw;
     height: auto;
-    padding: 7px 40px 40px 40px;
+    padding: 25px 40px 40px 40px;
     display: grid;
     grid-template-columns: 22vw;
     grid-template-rows: 10vw 10vw 10vw;
@@ -556,7 +560,7 @@ em {
     background-image: url(images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
     background-size: cover;
     width: 38%;
-    height: 91%;
+    height: 90%;
     border-radius: 20px 0px 0px 20px;
     margin-top: 8px;
     background-position: 50% 53%;
@@ -575,7 +579,7 @@ em {
     background-image: url(images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg);
     background-size: cover;
     width: 38%;
-    height: 91%;
+    height: 90%;
     border-radius: 20px 0px 0px 20px;
     margin-top: 8px;
     background-position: 50% 53%;
@@ -594,7 +598,7 @@ em {
     background-image: url(images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
     background-size: cover;
     width: 38%;
-    height: 91%;
+    height: 90%;
     border-radius: 20px 0px 0px 20px;
     margin-top: 8px;
     background-position: 50% 53%;
@@ -628,7 +632,7 @@ em {
 
 #section_activite h2 {
     font-size: 0.9rem;
-    margin: 20px;
+    margin: 15px 20px;
 }
 
 #section_activite a {
@@ -671,14 +675,14 @@ em {
 .ile_du_fioul { 
     grid-area: ile_du_fioul; 
     height: 13vw;
-    margin-top: 38px;
+    margin-top: 30px;
 }
 
 .box_photo_ile_du_fioul {
     background-image: url(images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
     background-size: cover;
     width: 100%;
-    height: 80%;
+    height: 76%;
     border-radius: 20px 20px 0px 0px;
     background-position: 50% 53%;
 }
