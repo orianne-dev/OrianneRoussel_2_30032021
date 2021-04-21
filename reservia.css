@@ -124,7 +124,6 @@ form label {
 form i { padding: 0px 0px 0px 7px; }
 
 em {
-    border: 1px solid #F2F2F2;
     border-radius: 20px 0px 0px 20px;
     background-color: #F2F2F2;
     margin: 0 -5px 0 0 ;
@@ -321,6 +320,7 @@ em {
 #section_hebergement ul {
     line-height: 21px;
     margin: 0px;
+    padding: 0 0 0 20px;
 }
 
 #section_hebergement p {
@@ -334,7 +334,7 @@ em {
 
 #section_hebergement strong {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 #section_hebergement a:hover {
