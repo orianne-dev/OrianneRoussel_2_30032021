@@ -209,13 +209,19 @@ em {
 }
 
 .filtre-container span {
-    color: #0065FC;
-    border: 5px solid #DEEBFF;
-    background-color: #DEEBFF;
-    padding: 9px;
-    border-radius: 44% 44% 44% 44%;
-    font-size: 1rem;
-    margin-right: 7px;
+        color: #0065FC;
+        border: 5px solid #DEEBFF;
+        background-color: #DEEBFF;
+        padding: 9px;
+        border-radius: 44% 44% 44% 44%;
+        font-size: 1rem;
+        margin-right: 7px;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        left: -15px;
 }
   
 .filtres { 
@@ -1593,8 +1599,8 @@ header {
     /*fitres*/
 
     .btn_filtre {
-        margin: 0;
-        width: 85%;
+        margin: 0 0 0 25px;
+    width: 85%;
     }
     
     .btn_filtre p {
@@ -1623,7 +1629,6 @@ header {
         border-radius: 50% 50% 50% 50%;
         margin-right: 5px;
         position: relative;
-    left: -3px;
     }
 
     .info-i {
@@ -2336,7 +2341,7 @@ header {
     }
 
     .info-i {
-            margin: 15px 60px 0px 0px;
+        margin: 15px 60px 0px 30px;
         }
 
 }
