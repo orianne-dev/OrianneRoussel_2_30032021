@@ -1622,6 +1622,8 @@ header {
         padding: 7px;
         border-radius: 50% 50% 50% 50%;
         margin-right: 5px;
+        position: relative;
+    left: -3px;
     }
 
     .info-i {
