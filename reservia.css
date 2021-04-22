@@ -2024,6 +2024,30 @@ header {
         padding-top: 9px;
     }
 
+    .fam p:hover {
+        color: #0065FC;
+        font-size: 0.8rem;
+        background-color: #DEEBFF;
+    }
+    
+    .eco p:hover {
+        color: #0065FC;
+        font-size: 0.8rem;
+        background-color: #DEEBFF;
+    }
+    
+    .rom p:hover {
+        color: #0065FC;
+        font-size: 0.8rem;
+        background-color: #DEEBFF;
+    }
+    
+    .anim p:hover {
+        color: #0065FC;
+        font-size: 0.8rem;
+        background-color: #DEEBFF;
+    }
+
 /*hebergement populaire*/
 
     .hebergement_pop {
