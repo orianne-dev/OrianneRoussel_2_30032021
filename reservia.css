@@ -1594,7 +1594,7 @@ header {
 
     .btn_filtre {
         margin: 0;
-        flex-wrap: wrap;
+        width: 85%;
     }
     
     .btn_filtre p {
