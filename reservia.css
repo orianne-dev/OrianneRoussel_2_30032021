@@ -128,7 +128,7 @@ em {
     background-color: #F2F2F2;
     margin: 0 -5px 0 0 ;
     font-size: 1rem;
-    padding: 15px 13px 15px 13px;
+    padding: 16px 13px 16px 13px;
 }
 
 .input_rch {
@@ -226,6 +226,7 @@ em {
   
 .filtres { 
     grid-area: filtres; 
+    margin-top: 14px;
 }
 
 .filtres p {
@@ -826,8 +827,34 @@ footer {
     }
 
     .etoile {
-        padding: 0px;
+        padding: 0px 0px 10px 10px;
+        font-size: 0.8rem;
     }
+
+    .section_populaire h2 {
+        font-size: 1rem;
+    }
+
+    .section_populaire p {
+        font-size: 1rem;
+    }
+
+    .info {
+        padding: 0px 0px 0px 10px;
+    }
+
+    #section_hebergement strong {
+        font-size: 1rem;
+    }
+
+    #section_hebergement li {
+        font-size: 1rem;
+    }
+
+    #section_hebergement i {
+        font-size: 0.8rem;
+    }
+    
 
 }
 
@@ -978,6 +1005,7 @@ footer {
 
 }
 
+/*tablette*/
 
 @media (max-width: 1284px) {
 
@@ -1080,9 +1108,13 @@ footer {
     }
     
     .input_btn {
-        height: 52px;
+        height: 48px;
         width: 120px;
         font-size: 0.8rem;
+    }
+
+    em {
+        padding: 14px 13px 16px 13px;
     }
 
     /* filtres */
@@ -1109,7 +1141,7 @@ footer {
     
 
     .btn_filtre {
-        margin-top: 15px;
+        margin: 15px;
         grid-area : btn_filtre;
         display: flex;
         flex-direction: row;
@@ -1263,8 +1295,6 @@ footer {
 
 }
 
-/*Media queries tablette breakpoint [1024 / 991] */
-
 @media (max-width: 1161px) {
 
     /*en tete*/
@@ -1277,12 +1307,16 @@ footer {
         visibility: visible;
         display: flex;
         font-size: 0.9rem;
-        margin: -29px 0px 0px 11px;
+        margin: -34px 0px 0px 11px;
         position: absolute;
     }
 
     .input_btn {
         width: 60px;
+    }
+
+    em {
+        padding: 14px 13px 17px 13px;
     }
 
     .filtre-container p {
@@ -1294,19 +1328,23 @@ footer {
     }
 
     .btn_filtre {
-        margin-top: 26px;
+        margin: 26px 0px 0px 18px;
         flex-wrap: nowrap;
     }
 
     .filtre-container {
-        height: 175px;
-        grid-template-rows: 50px 40% 50px;
+        height: 203px;
+        grid-template-rows: 50px 40% 73px;
     }
 
     .filtre-container span {
         border: 3px solid #DEEBFF;
         font-size: 0.9rem;
         margin-right: 3px;
+    }
+
+    .info-i {
+        margin: 15px 0px 0px 5px;
     }
 
     /*main*/
@@ -1333,6 +1371,18 @@ footer {
         margin: 0px;
     }
 
+    .box_photo_hotel_le_soleil {
+        height: 92%;
+    }
+
+    .box_photo_au_coeur {
+        height: 92%;
+    }
+
+    .box_photo_hotel_tout_bleu {
+        height: 92%;
+    }
+
     .section_populaire h1 {
         font-size: 1rem;
         margin: 0px;
@@ -1340,11 +1390,16 @@ footer {
     }
 
     .section_populaire h2 {
-        font-size: 0.8rem;
+        font-size: 1rem;
+        justify-content: flex-start;
     }
 
     .section_populaire p {
-        font-size: 0.8rem;
+        font-size: 1rem;
+    }
+
+    .section_populaire i {
+        font-size: 0.9rem;
     }
 
     .info {
@@ -1387,6 +1442,29 @@ footer {
             "hotel_les_mouettes hotel_de_la_mer"
             "auberge_le_panier hotel_chez_amina";
     }
+    .box_photo_auberge_la_cannebiere {
+        width: 97%;
+    }
+
+    .box_photo_hotel_du_port {
+        width: 97%;
+    }
+
+    .box_photo_hotel_les_mouettes {
+        width: 97%;
+    }
+
+    .box_photo_hotel_de_la_mer {
+        width: 97%;
+    }
+
+    .box_photo_auberge_le_panier {
+        width: 97%;
+    }
+
+    .box_photo_hotel_chez_amina {
+        width: 97%;
+    }
 
     #section_hebergement h1 {
         font-size: 1rem;
@@ -1394,15 +1472,15 @@ footer {
     }
 
     #section_hebergement strong {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     #section_hebergement li {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     #section_hebergement i {
-        font-size: 0.6rem;
+        font-size: 0.9rem;
     }
 
     #section_hebergement ul {
@@ -1410,7 +1488,7 @@ footer {
     }
 
     #section_hebergement p {
-        font-size: 0.8rem;
+        font-size: 1rem;
         display: flex;
         justify-content: center;
     }
@@ -1448,9 +1526,13 @@ footer {
     }
 
     #section_activite h2 {
-        font-size: 0.7rem;
+        font-size: 1rem;
         margin: 9px 0px 0px 0px;
         justify-content: center;
+    }
+
+    .box_photo_ile_du_fioul {
+        height: 80%;
     }
 
     /*footer*/
@@ -1460,16 +1542,16 @@ footer {
     }
 
     .container_footer ul {
-        line-height: 24px;
-        font-size: 0.6rem;
+        line-height: 32px;
+        font-size: 1rem;
     }
 
     .box_footer {
-        font-size: 0.6rem;
+        font-size: 1rem;
     }
 
     footer {
-        height: 125px;
+        height: 165px;
     }
 
 }
@@ -1487,7 +1569,7 @@ footer {
     }
 
     em {
-        padding: 13px 13px 15px 13px;
+        padding: 14px 13px 16px 13px;
     }
 
     .info-i p {
@@ -1502,7 +1584,7 @@ footer {
 
 }
 
-/*media queries telephone breakpoint [768 / 480 / 320] */
+/*media queries telephone*/
 
 @media (min-width: 768px) { 
     .recherche br {
@@ -1585,7 +1667,7 @@ header {
 
     em {
         font-size: 0.9rem;
-        padding: 14px 13px 17px 9px;
+        padding: 16px 13px 16px 9px;
     }
 
     .formulaire {
@@ -1593,11 +1675,19 @@ header {
         justify-content: flex-start;
     }
 
+    .input_btn {
+        height: 47px;
+    }
+
+    .fa-search {
+        margin: -34px 0px 0px 11px;
+    }
+
     /*fitres*/
 
     .btn_filtre {
         margin: 0 0 0 25px;
-    width: 85%;
+        width: 91%;
     }
     
     .btn_filtre p {
@@ -1608,9 +1698,9 @@ header {
 
     .filtre-container {
         height: 360px;
-    margin: -20px 0px 0px 20px;
-    grid-template-columns: 385px;
-    grid-template-rows: 60px 62% 66px;
+        margin: -20px 0px 0px 20px;
+        grid-template-columns: 385px;
+        grid-template-rows: 60px 62% 66px;
     }
 
     .filtre-container p {
@@ -1930,6 +2020,14 @@ header {
         font-size: 0.8rem
     }
 
+    .filtres {
+        margin-top: 0px;
+    }
+
+    em {
+        padding: 17px 13px 16px 9px;
+    }
+
 /*section populaire*/
 
     .section_populaire h1 {
@@ -2018,6 +2116,10 @@ header {
     .input_rch {
         width: 190px;
         font-size: 0.8rem;
+    }
+
+    em {
+        padding: 16px 13px 17px 9px;
     }
 
 /*filtre*/
